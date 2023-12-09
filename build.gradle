@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless' version '6.16.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+spotless {
+    java {
+        googleJavaFormat('1.16.0').aosp().reflowLongStrings()
+    }
+    enforceCheck false
+}
+
+dependencies {
+}
+
+test {
+    useJUnitPlatform()
+}
