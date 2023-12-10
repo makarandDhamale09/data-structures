@@ -1,6 +1,6 @@
-package main.java.Stack.LinkedListStack;
+package Stack.LinkedListStack;
 
-import main.java.LinkedList.SingleLinkedList.SingleLinkedList;
+import LinkedList.SingleLinkedList.SingleLinkedList;
 
 public class LinkedListStack {
     SingleLinkedList linkedList;

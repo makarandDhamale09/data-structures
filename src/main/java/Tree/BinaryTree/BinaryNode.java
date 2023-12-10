@@ -1,4 +1,4 @@
-package main.java.Tree.BinaryTree;
+package Tree.BinaryTree;
 
 public class BinaryNode {
     public String value;

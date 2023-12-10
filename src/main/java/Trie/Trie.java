@@ -1,4 +1,4 @@
-package main.java.Trie;
+package Trie;
 
 public class Trie {
     private final Node node;
@@ -7,8 +7,8 @@ public class Trie {
         this.node = new Node();
     }
 
-    public void insert(String s){
-        for(int i=0; i< s.length(); i++){
+    public void insert(String s) {
+        for (int i = 0; i < s.length(); i++) {
             int index = s.charAt(i) - 'a';
         }
     }

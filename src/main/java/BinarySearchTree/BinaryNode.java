@@ -1,4 +1,4 @@
-package main.java.BinarySearchTree;
+package BinarySearchTree;
 
 public class BinaryNode {
     int value;

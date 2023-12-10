@@ -1,4 +1,4 @@
-package main.java.Trie;
+package Trie;
 
 public class Node {
     Node[] children;
@@ -6,8 +6,8 @@ public class Node {
 
     public Node() {
         this.children = new Node[26];
-        for(int i=0; i<26; i++){
-            children[i]= null;
+        for (int i = 0; i < 26; i++) {
+            children[i] = null;
         }
         this.eow = false;
     }

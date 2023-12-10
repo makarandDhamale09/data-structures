@@ -1,8 +1,7 @@
-package main.java.LinkedList;
+package LinkedList;
 
-
-import main.java.LinkedList.SingleLinkedList.Node;
-import main.java.LinkedList.SingleLinkedList.SingleLinkedList;
+import LinkedList.SingleLinkedList.Node;
+import LinkedList.SingleLinkedList.SingleLinkedList;
 
 public class IntersectingList {
 

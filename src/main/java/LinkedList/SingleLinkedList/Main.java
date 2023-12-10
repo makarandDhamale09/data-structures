@@ -1,4 +1,4 @@
-package main.java.LinkedList.SingleLinkedList;
+package LinkedList.SingleLinkedList;
 
 public class Main {
 

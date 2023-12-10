@@ -1,4 +1,4 @@
-package main.java.Tree;
+package Tree;
 
 import java.util.ArrayList;
 
