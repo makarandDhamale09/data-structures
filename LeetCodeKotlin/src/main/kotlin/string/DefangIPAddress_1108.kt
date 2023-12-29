@@ -27,7 +27,7 @@ class DefangIPAddress {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val defang = DefangIPAddress()
     val defangIPaddr = defang.defangIPaddr("255.100.50.0")
 
