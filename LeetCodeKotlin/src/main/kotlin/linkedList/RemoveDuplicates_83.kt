@@ -2,27 +2,24 @@ package linkedList
 
 class RemoveDuplicates_83 {
     fun deleteDuplicates(head: ListNode?): ListNode? {
-        var currentNode = head?.next;
-        var currentVal = head?.value;
+        var currentNode = head;
+        var nextValue = currentNode?.next?.value
         while (currentNode != null) {
-            if (currentNode.value == currentVal) {
-                var previousNode = currentNode;
-                var nextNode = currentNode.next;
-            }
-            currentVal = currentNode.value;
-            currentNode = currentNode.next;
+            if (currentNode.value == nextValue) {
+                currentNode.next = currentNode.next?.next
+            }else
+                currentNode = currentNode.next
+            nextValue = currentNode?.next?.value
         }
-        return head;
+        return head
     }
 }
 
 fun main() {
     var obj = RemoveDuplicates_83()
 
-    val n5 = ListNode(3)
-    val n4 = ListNode(2, n5)
-    val n3 = ListNode(2, n4)
-    val n2 = ListNode(4, n3)
+    val n3 = ListNode(1)
+    val n2 = ListNode(1, n3)
     val n1 = ListNode(1, n2)
 
     ListNode.printList(n1)
