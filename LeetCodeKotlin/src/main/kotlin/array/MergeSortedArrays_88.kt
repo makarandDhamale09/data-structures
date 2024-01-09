@@ -1,7 +1,5 @@
 package array
 
-import java.util.*
-
 class MergeSortedArrays_88 {
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
         var l = 0
@@ -9,7 +7,7 @@ class MergeSortedArrays_88 {
         val arr = IntArray(m + n)
         var curr = 0
         while (l < m && r < n) {
-
+            //ToDO : Need to complete this code
         }
         println(arr.contentToString())
     }
