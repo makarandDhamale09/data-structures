@@ -1,15 +1,15 @@
 package Trie;
 
 public class Trie {
-    private final Node node;
+  private final Node node;
 
-    public Trie() {
-        this.node = new Node();
-    }
+  public Trie() {
+    this.node = new Node();
+  }
 
-    public void insert(String s) {
-        for (int i = 0; i < s.length(); i++) {
-            int index = s.charAt(i) - 'a';
-        }
+  public void insert(String s) {
+    for (int i = 0; i < s.length(); i++) {
+      int index = s.charAt(i) - 'a';
     }
+  }
 }

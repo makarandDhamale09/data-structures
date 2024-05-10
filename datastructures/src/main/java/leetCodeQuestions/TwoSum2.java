@@ -19,23 +19,23 @@ import java.util.Arrays;
  * Therefore, index1 = 1, index2 = 2. We return [1, 2].
  */
 public class TwoSum2 {
-    public static void main(String[] args) {
-        int[] nums = {1, 3, 4, 5, 7, 11};
-        int[] ans = twoSum(nums, 9);
-        System.out.println(Arrays.toString(ans));
-    }
+  public static void main(String[] args) {
+    int[] nums = {1, 3, 4, 5, 7, 11};
+    int[] ans = twoSum(nums, 9);
+    System.out.println(Arrays.toString(ans));
+  }
 
-    public static int[] twoSum(int[] nums, int target) {
-        int l = 0, r = nums.length - 1;
-        while (l < r) {
-            if (nums[l] + nums[r] > target) {
-                r--;
-            } else if (nums[l] + nums[r] < target) {
-                l++;
-            } else {
-                return new int[] {++l, ++r};
-            }
-        }
-        return null;
+  public static int[] twoSum(int[] nums, int target) {
+    int l = 0, r = nums.length - 1;
+    while (l < r) {
+      if (nums[l] + nums[r] > target) {
+        r--;
+      } else if (nums[l] + nums[r] < target) {
+        l++;
+      } else {
+        return new int[] {++l, ++r};
+      }
     }
+    return null;
+  }
 }

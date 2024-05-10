@@ -12,7 +12,7 @@ repositories {
 
 spotless {
     java {
-        googleJavaFormat('1.16.0').aosp().reflowLongStrings()
+        googleJavaFormat()
     }
     enforceCheck true
 }

@@ -21,33 +21,33 @@ import java.util.HashMap;
  * exists.
  */
 public class TwoSum {
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(twoSumHashMap(new int[] {2, 7, 11, 15}, 9)));
-    }
+  public static void main(String[] args) {
+    System.out.println(Arrays.toString(twoSumHashMap(new int[] {2, 7, 11, 15}, 9)));
+  }
 
-    public static int[] twoSumHashMap(int[] nums, int target) {
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
-        int num2;
-        Integer index2;
-        for (int i = 0; i < nums.length; i++) {
-            num2 = target - nums[i];
-            index2 = hashMap.get(num2);
-            if (index2 != null) {
-                return new int[] {index2, i};
-            }
-            hashMap.put(nums[i], i);
-        }
-        return null;
+  public static int[] twoSumHashMap(int[] nums, int target) {
+    HashMap<Integer, Integer> hashMap = new HashMap<>();
+    int num2;
+    Integer index2;
+    for (int i = 0; i < nums.length; i++) {
+      num2 = target - nums[i];
+      index2 = hashMap.get(num2);
+      if (index2 != null) {
+        return new int[] {index2, i};
+      }
+      hashMap.put(nums[i], i);
     }
+    return null;
+  }
 
-    public static int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target) {
-                    return new int[] {i, j};
-                }
-            }
+  public static int[] twoSum(int[] nums, int target) {
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i + 1; j < nums.length; j++) {
+        if (nums[i] + nums[j] == target) {
+          return new int[] {i, j};
         }
-        return null;
+      }
     }
+    return null;
+  }
 }

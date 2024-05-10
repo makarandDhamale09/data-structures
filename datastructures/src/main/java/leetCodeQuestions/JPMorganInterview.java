@@ -24,36 +24,33 @@ import java.util.stream.Collectors;
  * "Table".
  */
 public class JPMorganInterview {
-    public static void main(String[] args) {
-        ArrayList newOrder1 = new ArrayList();
-        newOrder1.add("Sarah");
-        newOrder1.add("7");
-        newOrder1.add("Green Salad");
-        ArrayList newOrder2 = new ArrayList();
-        newOrder2.add("Sarah");
-        newOrder2.add("7");
-        newOrder2.add("Cappuccino");
-        ArrayList newOrder3 = new ArrayList();
-        newOrder3.add("Michael");
-        newOrder3.add("2");
-        newOrder3.add("Club Sandwich");
-        ArrayList newOrder4 = new ArrayList();
-        newOrder4.add("Marcus");
-        newOrder4.add("5");
-        newOrder4.add("Sparkling Water");
+  public static void main(String[] args) {
+    ArrayList newOrder1 = new ArrayList();
+    newOrder1.add("Sarah");
+    newOrder1.add("7");
+    newOrder1.add("Green Salad");
+    ArrayList newOrder2 = new ArrayList();
+    newOrder2.add("Sarah");
+    newOrder2.add("7");
+    newOrder2.add("Cappuccino");
+    ArrayList newOrder3 = new ArrayList();
+    newOrder3.add("Michael");
+    newOrder3.add("2");
+    newOrder3.add("Club Sandwich");
+    ArrayList newOrder4 = new ArrayList();
+    newOrder4.add("Marcus");
+    newOrder4.add("5");
+    newOrder4.add("Sparkling Water");
 
-        ArrayList<ArrayList<String>> orders = new ArrayList<>();
-        orders.add(newOrder1);
-        orders.add(newOrder2);
-        orders.add(newOrder3);
-        orders.add(newOrder4);
+    ArrayList<ArrayList<String>> orders = new ArrayList<>();
+    orders.add(newOrder1);
+    orders.add(newOrder2);
+    orders.add(newOrder3);
+    orders.add(newOrder4);
 
-        Map<String, Map<String, Long>> map =
-                orders.stream()
-                        .collect(
-                                groupingBy(
-                                        x -> x.get(1),
-                                        groupingBy(x -> x.get(2), Collectors.counting())));
-        System.out.println(map);
-    }
+    Map<String, Map<String, Long>> map =
+        orders.stream()
+            .collect(groupingBy(x -> x.get(1), groupingBy(x -> x.get(2), Collectors.counting())));
+    System.out.println(map);
+  }
 }

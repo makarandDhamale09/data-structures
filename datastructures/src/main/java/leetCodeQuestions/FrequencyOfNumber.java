@@ -20,26 +20,26 @@ import java.util.Arrays;
  * and the second element two times to make nums = [4,4,4]. 4 has a frequency of 3.
  */
 public class FrequencyOfNumber {
-    public static void main(String[] args) {
-        FrequencyOfNumber frequencyOfNumber = new FrequencyOfNumber();
-        int[] nums = {3, 9, 6};
-        int i = frequencyOfNumber.maxFrequency(nums, 2);
-        System.out.println("Final Count : " + i);
-    }
+  public static void main(String[] args) {
+    FrequencyOfNumber frequencyOfNumber = new FrequencyOfNumber();
+    int[] nums = {3, 9, 6};
+    int i = frequencyOfNumber.maxFrequency(nums, 2);
+    System.out.println("Final Count : " + i);
+  }
 
-    public int maxFrequency(int[] nums, int k) {
-        Arrays.sort(nums);
-        int currentCount = 0;
-        int finalCount = 0;
-        System.out.println(Arrays.toString(nums));
-        for (int i = nums.length - 1; i >= 0; i--) {
-            for (int j = i - 1; j >= 0; j--) {
-                if ((nums[i] - nums[j]) < k) {
-                    currentCount++;
-                }
-            }
-            finalCount = Math.max(currentCount, finalCount);
+  public int maxFrequency(int[] nums, int k) {
+    Arrays.sort(nums);
+    int currentCount = 0;
+    int finalCount = 0;
+    System.out.println(Arrays.toString(nums));
+    for (int i = nums.length - 1; i >= 0; i--) {
+      for (int j = i - 1; j >= 0; j--) {
+        if ((nums[i] - nums[j]) < k) {
+          currentCount++;
         }
-        return finalCount;
+      }
+      finalCount = Math.max(currentCount, finalCount);
     }
+    return finalCount;
+  }
 }

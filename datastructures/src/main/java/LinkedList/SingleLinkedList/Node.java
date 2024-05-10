@@ -1,6 +1,6 @@
 package LinkedList.SingleLinkedList;
 
 public class Node {
-    public int value;
-    public Node nextNode;
+  public int value;
+  public Node nextNode;
 }

@@ -3,9 +3,9 @@ package Stack.LinkedListStack;
 import LinkedList.SingleLinkedList.SingleLinkedList;
 
 public class LinkedListStack {
-    SingleLinkedList linkedList;
+  SingleLinkedList linkedList;
 
-    public LinkedListStack() {
-        linkedList = new SingleLinkedList();
-    }
+  public LinkedListStack() {
+    linkedList = new SingleLinkedList();
+  }
 }
