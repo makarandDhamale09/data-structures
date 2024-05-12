@@ -55,6 +55,7 @@ unstable sorting.
 
 ## Sorting Algorithms
 
-|  Algorithm  | Time Complexity  | Space Complexity | Stability |
-|:-----------:|:----------------:|:----------------:|:---------:|
-| Bubble Sort | O(N<sup>2</sup>) |       O(1)       |           |
+|   Algorithm    | Time Complexity  | Space Complexity | Stability |
+|:--------------:|:----------------:|:----------------:|:---------:|
+|  Bubble Sort   | O(N<sup>2</sup>) |       O(1)       |           |
+| Selection Sort | O(N<sup>2</sup>) |       O(1)       |           |
